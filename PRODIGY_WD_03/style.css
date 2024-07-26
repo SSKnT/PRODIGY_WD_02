@@ -1,0 +1,16 @@
+.wid-5{
+    width:40rem;
+}
+
+.border-tr{
+    border-top-color:none; 
+}
+.border-br{
+    border-bottom-color:none; 
+}
+.border-lr{
+    border-left-color:none; 
+}
+.border-rr{
+    border-left-color:none; 
+}

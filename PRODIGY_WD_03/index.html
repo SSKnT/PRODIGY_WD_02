@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .board-cell {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: beige;
+        }
+        .card {
+            background-color: #f8f9fa; /* Light background for the card */
+        }
+        .board-cell {
+            border: 2px solid #ffc107; /* Success color border */
+        }
+        .board-cell:hover {
+            background-color: #e9ecef; /* Light grey on hover */
+        }
+        .reset-icon {
+            cursor: pointer;
+            color: #ffc107; /* Success color */
+        }
+        .reset-icon:hover {
+            color: #e0a800; /* Darker success color on hover */
+        }
+    </style>
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-warning">Tic-Tac-Toe</h1>
+    </div>
+    <div class="card p-4 shadow-lg" style="background-color: beige;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 border-top border-left cell board-cell"></div>
+                <div class="col-4 border-top cell board-cell"></div>
+                <div class="col-4 border-top border-right cell board-cell"></div>
+            </div>
+            <div class="row">
+                <div class="col-4 cell border-left board-cell"></div>
+                <div class="col-4 cell board-cell "></div>
+                <div class="col-4 cell board-cell border-right"></div>
+            </div>
+            <div class="row">
+                <div class="col-4 cell border-left border-bottom board-cell"></div>
+                <div class="col-4 cell border-bottom board-cell"></div>
+                <div class="col-4 cell border-bottom border-right board-cell"></div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <i class="fas fa-redo-alt fa-2x reset-icon" onclick="resetGame()"></i>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="TicTacToe.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
